@@ -12,6 +12,9 @@ function getEmotionsArray(cats){
 }
 
     const emotionRadios = document.getElementById('emotion-radios')
+    emotionRadios.addEventListener('change', function(e){
+        console.log(e.target.id)
+    })
 
     function renderEmotionsRadios(cats){
         let radioItems = ``
