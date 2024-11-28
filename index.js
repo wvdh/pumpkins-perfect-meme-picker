@@ -1,4 +1,4 @@
-import { catsData } from '/data.js'
+import { catsData } from '.data.js'
 
 function getEmotionsArray(cats){
     const emotionsArray = []
