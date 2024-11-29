@@ -30,10 +30,6 @@ function getEmotionsArray(cats){
     return emotionsArray
 }
 
-emotionRadios.addEventListener('change', function(e){
-        console.log(e.target.id)
-})
-
 function renderEmotionsRadios(cats){
       let radioItems = ``
       const emotions = getEmotionsArray(cats)
