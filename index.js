@@ -12,17 +12,17 @@ function highlightCheckedOption(e){
     for (let radio of radios){
         radio.classList.remove('highlight')
     }
-    // remove all instances of the highlight class
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
 function getMatchingCatsArray(){
-    const isGif = gifsOnlyOption.checked
-    console.log(isGif)
-    
     if (document.querySelector('input[type="radio"]:checked')) {
-    const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
-    console.log(selectedEmotion)
+        const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
+        const isGif = gifsOnlyOption.checked
+        const matchingCatsArray = catsData.filter(function(cat){
+            return cat.emotionTags.includes(selectedEmotion)
+        })
+        console.log(matchingCatsArray)
     }
 }
 
