@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     font-family: 'Karla', sans-serif;
+    background-color: #fbf7f7; 
 }
 
 /*typography*/
@@ -57,7 +58,7 @@ header{
 .emotion-radios{
     display: flex;
     flex-direction: column;
-    border: 1px solid #bcbcbc;
+    border: 2px solid #bcbcbc;
     border-radius: 5px;
 }
 
@@ -68,22 +69,29 @@ header{
     padding: 4px 8px;
 }
 
+.radio:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.radio:last-child{
+    border-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 label{
-    font-size: 14px;
+    font-size: 16px;
     padding: 3px;
     width: 100%;
     cursor: pointer;
 }
 
 .highlight{
-    background-color: #fff0ee;
-    color: #bd301d;
+    background-color: #edd4d2;
+    color: #68595e;
     font-weight: bold;
-    accent-color: #bd301d;
-}
-
-.radio:last-child{
-    border-bottom: 0;
+    accent-color: #19181b;
 }
 
 input[type="radio"]{
@@ -91,15 +99,20 @@ input[type="radio"]{
 }
 
 .gifs-check{
+    font-size: 16px;
+    text-decoration: italic;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 16px;
+    margin: 14px;
+    accent-color: #19181b;
 }
 
 .gifs-check-label{
+    font-size: 16px;
+    font-style: italic;
     width: unset;
-    margin-right: 5px;
+    //margin-right: 5px;
 }
 
 .get-image-btn{
@@ -111,6 +124,8 @@ input[type="radio"]{
     border: none;
     border-radius: 5px;
     margin-bottom: 8px;
+    box-shadow: 0px 6px 6px black;
+    cursor: pointer;
 }
 
 /* modal */
