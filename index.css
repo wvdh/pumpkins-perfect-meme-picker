@@ -13,6 +13,7 @@ h1, h2, h3{
 h1, h2{
     color: #EED6D3;
     margin: 0;
+    text-shadow: 5px 10px 8px #141a32;
 }
 
 h1{
@@ -125,8 +126,9 @@ input[type="radio"]{
     border: none;
     border-radius: 5px;
     margin-bottom: 8px;
-    box-shadow: 0px 6px 6px black;
+    box-shadow: 0px 4px 4px black;
     cursor: pointer;
+    text-shadow: 5px 0px 8px #141a32;
 }
 
 /* modal */
