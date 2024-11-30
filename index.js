@@ -41,13 +41,13 @@ function renderEmotionsRadios(cats){
     for (let emotion of emotions){
         radioItems += `
         <div class="radio">
+            <label for="${emotion}">${emotion}</label>
             <input
             type="radio"
             id="${emotion}"
             value="${emotion}"
             name="emotions"
             >
-            <label for="${emotion}">${emotion}</label>
         </div>`
     }
     emotionRadios.innerHTML = radioItems
