@@ -3,6 +3,7 @@ const emotionRadios = document.getElementById('emotion-radios')
 const getImageBtn = document.getElementById('get-image-btn')
 
 emotionRadios.addEventListener('change', highlightCheckedOption)
+
 getImageBtn.addEventListener('click', getMatchingCatsArray)
 
 function highlightCheckedOption(e){
@@ -15,8 +16,10 @@ function highlightCheckedOption(e){
 }
 
 function getMatchingCatsArray(){
+    if (document.querySelector('input[type="radio"]:checked')) {
     const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
     console.log(selectedEmotion)
+    }
 }
 
 function getEmotionsArray(cats){
@@ -31,22 +34,24 @@ function getEmotionsArray(cats){
     return emotionsArray
 }
 
-function renderEmotionsRadios(cats){        
+function renderEmotionsRadios(cats){
+        
     let radioItems = ``
     const emotions = getEmotionsArray(cats)
     for (let emotion of emotions){
         radioItems += `
         <div class="radio">
-            <label for="${emotion}">${emotion}</label>
             <input
             type="radio"
             id="${emotion}"
             value="${emotion}"
             name="emotions"
             >
+            <label for="${emotion}">${emotion}</label>
         </div>`
     }
     emotionRadios.innerHTML = radioItems
 }
 
+renderEmotionsRadios(catsData)
 renderEmotionsRadios(catsData)
