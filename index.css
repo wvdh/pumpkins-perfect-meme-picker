@@ -108,6 +108,7 @@ input[type="radio"]{
 
 .radio:hover {
     background-color: #f8ecee; /* Hover-effect */
+    transition: all 0.3s ease-in-out;
 }
 
 .gifs-check{
@@ -143,6 +144,7 @@ input[type="radio"]{
 .get-image-btn:hover {
     background-color: #edd4d2; /* Hover-effect */
     color: #67595e;
+    transition: all 0.3s ease-in-out;
 }
 
 /* modal */
