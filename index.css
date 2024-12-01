@@ -70,6 +70,11 @@ header{
     align-items: center;
     border-bottom: 1px solid #bcbcbc;
     padding: 4px 8px;
+    gap: 20px;
+    padding: 10px 5px;
+    //border: 1px solid transparent; /* Voor highlight-effect */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .radio:first-child{
@@ -101,6 +106,10 @@ input[type="radio"]{
     cursor: pointer;
 }
 
+.radio:hover {
+    background-color: #f8ecee; /* Hover-effect */
+}
+
 .gifs-check{
     font-size: 16px;
     text-decoration: italic;
@@ -129,7 +138,11 @@ input[type="radio"]{
     margin-bottom: 8px;
     box-shadow: 0px 4px 4px black;
     cursor: pointer;
-    text-shadow: 5px 0px 8px #141a32;
+}
+
+.get-image-btn:hover {
+    background-color: #edd4d2; /* Hover-effect */
+    color: #67595e;
 }
 
 /* modal */
