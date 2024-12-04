@@ -24,10 +24,6 @@ h2 {
     font-size: 16px;
 }
 
-h3{
-    margin: 25px;
-}
-
 /* layout */
 
 header{
@@ -39,7 +35,7 @@ header{
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 370px;
+    width: 320px;
     gap: 15px;
     padding: 10px 0 0 0;
 }
@@ -69,9 +65,8 @@ header{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #bcbcbc;
-    padding: 4px 8px;
     gap: 20px;
-    padding: 10px 5px;
+    padding: 6px 8px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -129,7 +124,7 @@ input[type="radio"]{
 .get-image-btn{
     background-color: #67595e;
     color: #eed6d3;
-    padding: 15px 19px;
+    padding: 12px 15px;
     font-size: 24px;
     font-weight: 700;
     border: none;
@@ -158,8 +153,8 @@ input[type="radio"]{
     justify-content: center;
     border: 1px solid #67595e;
     border-radius: 5px;
-    width: 420px;
-    height: 570px;
+    width: 380px;
+    height: 480px;
     background-color: #fff0ee;
     box-shadow: 0px 4px 4px black;
 }
