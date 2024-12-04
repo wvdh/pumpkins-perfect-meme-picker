@@ -53,6 +53,12 @@ export const catsData = [
         image: "insomnia.jpeg",
         alt: "A cat looking insomniac",
     },
+        {
+        emotionTags: ["confused"],
+        isGif: true,
+        image: "confused1.gif",
+        alt: "A cat looking confused",
+    },
     {
         emotionTags: ["insomniac"],
         isGif: false,
